@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             bt_animal = new Button();
-            button1 = new Button();
+            bt_consulta = new Button();
             SuspendLayout();
             // 
             // bt_animal
@@ -43,25 +43,27 @@
             bt_animal.TabIndex = 0;
             bt_animal.Text = "Animal";
             bt_animal.UseVisualStyleBackColor = true;
+            bt_animal.Click += bt_animal_Click;
             // 
-            // button1
+            // bt_consulta
             // 
-            button1.FlatAppearance.BorderColor = SystemColors.Highlight;
-            button1.FlatAppearance.BorderSize = 3;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(336, 273);
-            button1.Name = "button1";
-            button1.Size = new Size(80, 40);
-            button1.TabIndex = 1;
-            button1.Text = "Consulta";
-            button1.UseVisualStyleBackColor = true;
+            bt_consulta.FlatAppearance.BorderColor = SystemColors.Highlight;
+            bt_consulta.FlatAppearance.BorderSize = 3;
+            bt_consulta.FlatStyle = FlatStyle.Flat;
+            bt_consulta.Location = new Point(336, 273);
+            bt_consulta.Name = "bt_consulta";
+            bt_consulta.Size = new Size(80, 40);
+            bt_consulta.TabIndex = 1;
+            bt_consulta.Text = "Consulta";
+            bt_consulta.UseVisualStyleBackColor = true;
+            bt_consulta.Click += bt_consulta_Click;
             // 
             // MenuInicial
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(bt_consulta);
             Controls.Add(bt_animal);
             Name = "MenuInicial";
             Text = "Menu Inicial";
@@ -71,6 +73,6 @@
         #endregion
 
         private Button bt_animal;
-        private Button button1;
+        private Button bt_consulta;
     }
 }
