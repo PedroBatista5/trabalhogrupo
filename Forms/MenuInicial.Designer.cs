@@ -37,7 +37,7 @@
             bt_animal.FlatAppearance.BorderColor = SystemColors.Highlight;
             bt_animal.FlatAppearance.BorderSize = 3;
             bt_animal.FlatStyle = FlatStyle.Flat;
-            bt_animal.Location = new Point(336, 90);
+            bt_animal.Location = new Point(360, 172);
             bt_animal.Name = "bt_animal";
             bt_animal.Size = new Size(80, 40);
             bt_animal.TabIndex = 0;
@@ -50,7 +50,7 @@
             bt_consulta.FlatAppearance.BorderColor = SystemColors.Highlight;
             bt_consulta.FlatAppearance.BorderSize = 3;
             bt_consulta.FlatStyle = FlatStyle.Flat;
-            bt_consulta.Location = new Point(336, 273);
+            bt_consulta.Location = new Point(360, 238);
             bt_consulta.Name = "bt_consulta";
             bt_consulta.Size = new Size(80, 40);
             bt_consulta.TabIndex = 1;

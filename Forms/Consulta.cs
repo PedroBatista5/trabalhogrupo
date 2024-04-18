@@ -16,5 +16,25 @@ namespace trabalhogrupo.Forms
         {
             InitializeComponent();
         }
+
+        private void bt_adicionar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_remover_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_editar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_voltar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
