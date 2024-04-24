@@ -66,6 +66,7 @@
             Controls.Add(bt_consulta);
             Controls.Add(bt_animal);
             Name = "MenuInicial";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu Inicial";
             ResumeLayout(false);
         }
