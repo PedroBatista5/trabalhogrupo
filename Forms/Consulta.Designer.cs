@@ -60,7 +60,7 @@
             // 
             btConfirmarAtualizar.Enabled = false;
             btConfirmarAtualizar.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btConfirmarAtualizar.Location = new Point(658, 215);
+            btConfirmarAtualizar.Location = new Point(656, 215);
             btConfirmarAtualizar.Name = "btConfirmarAtualizar";
             btConfirmarAtualizar.Size = new Size(118, 65);
             btConfirmarAtualizar.TabIndex = 23;
@@ -95,7 +95,7 @@
             // 
             btConfirmar.Enabled = false;
             btConfirmar.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btConfirmar.Location = new Point(655, 215);
+            btConfirmar.Location = new Point(656, 215);
             btConfirmar.Name = "btConfirmar";
             btConfirmar.Size = new Size(118, 65);
             btConfirmar.TabIndex = 20;
@@ -136,6 +136,7 @@
             btAlterar.TabIndex = 17;
             btAlterar.Text = "Alterar Registo";
             btAlterar.UseVisualStyleBackColor = true;
+            btAlterar.Click += btAlterar_Click_1;
             // 
             // btRemover
             // 

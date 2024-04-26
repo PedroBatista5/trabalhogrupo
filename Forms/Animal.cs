@@ -71,7 +71,6 @@ namespace trabalhogrupo.Forms
         private void btAlterar_Click(object sender, EventArgs e)
         {
 
-
             //Esconder os botões anteriores
             btAdicionar.Enabled = false;
             btRemover.Enabled = false;

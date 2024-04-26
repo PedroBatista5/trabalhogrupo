@@ -65,31 +65,7 @@ namespace trabalhogrupo.Forms
 
         }
 
-        private void btAlterar_Click(object sender, EventArgs e)
-        {
-            //Esconder os botões anteriores
-            btAdicionar.Enabled = false;
-            btRemover.Enabled = false;
-            btAlterar.Enabled = false;
-            btVoltar.Enabled = false;
-
-            btAdicionar.Visible = false;
-            btRemover.Visible = false;
-            btAlterar.Visible = false;
-            btVoltar.Visible = false;
-
-            //btRemover
-            lblInformacao.Text = "Atualizar Consulta";
-            txtID.Enabled = true;
-            btConfirmarAtualizar.Enabled = true;
-            btVoltarRemover.Enabled = true;
-
-            lblInformacao.Visible = true;
-            btLabel2.Visible = true;
-            txtID.Visible = true;
-            btConfirmarAtualizar.Visible = true;
-            btVoltarRemover.Visible = true;
-        }
+      
 
         private void btVoltar_Click(object sender, EventArgs e)
         {
@@ -168,6 +144,31 @@ namespace trabalhogrupo.Forms
             Consulta_Atualizar atualizar = new Consulta_Atualizar(valorID);
             atualizar.Show();
             this.Hide();
+        }
+
+        private void btAlterar_Click_1(object sender, EventArgs e)
+        {
+            btAdicionar.Enabled = false;
+            btRemover.Enabled = false;
+            btAlterar.Enabled = false;
+            btVoltar.Enabled = false;
+
+            btAdicionar.Visible = false;
+            btRemover.Visible = false;
+            btAlterar.Visible = false;
+            btVoltar.Visible = false;
+
+            //btRemover
+            lblInformacao.Text = "Atualizar Consulta";
+            txtID.Enabled = true;
+            btConfirmarAtualizar.Enabled = true;
+            btVoltarRemover.Enabled = true;
+
+            lblInformacao.Visible = true;
+            btLabel2.Visible = true;
+            txtID.Visible = true;
+            btConfirmarAtualizar.Visible = true;
+            btVoltarRemover.Visible = true;
         }
     }
 }
