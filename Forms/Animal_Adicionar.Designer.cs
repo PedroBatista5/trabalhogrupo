@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             btVoltar = new Button();
-            btAlterar = new Button();
             btAdicionar = new Button();
             btConfirmar = new Button();
             label1 = new Label();
@@ -61,13 +60,6 @@
             btVoltar.Text = "Voltar";
             btVoltar.UseVisualStyleBackColor = true;
             btVoltar.Click += btVoltar_Click;
-            // 
-            // btAlterar
-            // 
-            btAlterar.Location = new Point(0, 0);
-            btAlterar.Name = "btAlterar";
-            btAlterar.Size = new Size(75, 23);
-            btAlterar.TabIndex = 35;
             // 
             // btAdicionar
             // 
@@ -265,7 +257,6 @@
             Controls.Add(txtNome);
             Controls.Add(label2);
             Controls.Add(btVoltar);
-            Controls.Add(btAlterar);
             Controls.Add(btAdicionar);
             Controls.Add(btConfirmar);
             Controls.Add(label1);
@@ -280,7 +271,6 @@
         #endregion
 
         private Button btVoltar;
-        private Button btAlterar;
         private Button btAdicionar;
         private Button btConfirmar;
         private Label label1;

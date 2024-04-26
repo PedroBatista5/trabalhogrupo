@@ -51,25 +51,27 @@
             label5 = new Label();
             txtPesos = new TextBox();
             txtObservacao = new TextBox();
+            txtID = new TextBox();
+            label7 = new Label();
             SuspendLayout();
             // 
             // txtConsulta
             // 
-            txtConsulta.Location = new Point(290, 98);
+            txtConsulta.Location = new Point(290, 155);
             txtConsulta.Name = "txtConsulta";
             txtConsulta.Size = new Size(254, 23);
             txtConsulta.TabIndex = 54;
             // 
             // dtpVisita
             // 
-            dtpVisita.Location = new Point(290, 179);
+            dtpVisita.Location = new Point(290, 236);
             dtpVisita.Name = "dtpVisita";
             dtpVisita.Size = new Size(254, 23);
             dtpVisita.TabIndex = 51;
             // 
             // dtpConsulta
             // 
-            dtpConsulta.Location = new Point(12, 179);
+            dtpConsulta.Location = new Point(12, 236);
             dtpConsulta.Name = "dtpConsulta";
             dtpConsulta.Size = new Size(255, 23);
             dtpConsulta.TabIndex = 50;
@@ -78,7 +80,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(296, 311);
+            label6.Location = new Point(296, 368);
             label6.Name = "label6";
             label6.Size = new Size(86, 19);
             label6.TabIndex = 48;
@@ -88,7 +90,7 @@
             // 
             Diagnostico.AutoSize = true;
             Diagnostico.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            Diagnostico.Location = new Point(295, 230);
+            Diagnostico.Location = new Point(295, 287);
             Diagnostico.Name = "Diagnostico";
             Diagnostico.Size = new Size(80, 19);
             Diagnostico.TabIndex = 47;
@@ -98,7 +100,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(294, 145);
+            label8.Location = new Point(294, 202);
             label8.Name = "label8";
             label8.Size = new Size(156, 19);
             label8.TabIndex = 46;
@@ -108,7 +110,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(293, 64);
+            label9.Location = new Point(293, 121);
             label9.Name = "label9";
             label9.Size = new Size(115, 19);
             label9.TabIndex = 45;
@@ -118,7 +120,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(13, 145);
+            label3.Location = new Point(13, 202);
             label3.Name = "label3";
             label3.Size = new Size(117, 19);
             label3.TabIndex = 42;
@@ -126,7 +128,7 @@
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(13, 98);
+            txtNome.Location = new Point(13, 155);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(254, 23);
             txtNome.TabIndex = 41;
@@ -135,7 +137,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(12, 64);
+            label2.Location = new Point(12, 121);
             label2.Name = "label2";
             label2.Size = new Size(115, 19);
             label2.TabIndex = 40;
@@ -144,7 +146,7 @@
             // btVoltar
             // 
             btVoltar.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btVoltar.Location = new Point(656, 298);
+            btVoltar.Location = new Point(656, 216);
             btVoltar.Name = "btVoltar";
             btVoltar.Size = new Size(118, 65);
             btVoltar.TabIndex = 39;
@@ -154,14 +156,10 @@
             // 
             // btAlterar
             // 
-            btAlterar.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btAlterar.Location = new Point(656, 215);
+            btAlterar.Location = new Point(0, 0);
             btAlterar.Name = "btAlterar";
-            btAlterar.Size = new Size(118, 65);
-            btAlterar.TabIndex = 38;
-            btAlterar.Text = "Alterar Registo";
-            btAlterar.UseVisualStyleBackColor = true;
-            btAlterar.Click += btAlterar_Click;
+            btAlterar.Size = new Size(75, 23);
+            btAlterar.TabIndex = 70;
             // 
             // btAdicionar
             // 
@@ -197,14 +195,14 @@
             // 
             // txtDiagnostico
             // 
-            txtDiagnostico.Location = new Point(290, 263);
+            txtDiagnostico.Location = new Point(290, 320);
             txtDiagnostico.Name = "txtDiagnostico";
             txtDiagnostico.Size = new Size(254, 23);
             txtDiagnostico.TabIndex = 55;
             // 
             // txtAto
             // 
-            txtAto.Location = new Point(12, 263);
+            txtAto.Location = new Point(12, 320);
             txtAto.Name = "txtAto";
             txtAto.Size = new Size(254, 23);
             txtAto.TabIndex = 63;
@@ -213,7 +211,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(22, 311);
+            label4.Location = new Point(22, 368);
             label4.Name = "label4";
             label4.Size = new Size(36, 19);
             label4.TabIndex = 61;
@@ -223,7 +221,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(21, 230);
+            label10.Location = new Point(21, 287);
             label10.Name = "label10";
             label10.Size = new Size(82, 19);
             label10.TabIndex = 60;
@@ -231,7 +229,7 @@
             // 
             // txtPrecricao
             // 
-            txtPrecricao.Location = new Point(12, 415);
+            txtPrecricao.Location = new Point(12, 465);
             txtPrecricao.Name = "txtPrecricao";
             txtPrecricao.Size = new Size(532, 23);
             txtPrecricao.TabIndex = 65;
@@ -240,7 +238,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(21, 386);
+            label5.Location = new Point(21, 436);
             label5.Name = "label5";
             label5.Size = new Size(73, 19);
             label5.TabIndex = 64;
@@ -248,23 +246,42 @@
             // 
             // txtPesos
             // 
-            txtPesos.Location = new Point(13, 340);
+            txtPesos.Location = new Point(13, 397);
             txtPesos.Name = "txtPesos";
             txtPesos.Size = new Size(254, 23);
             txtPesos.TabIndex = 67;
             // 
             // txtObservacao
             // 
-            txtObservacao.Location = new Point(291, 340);
+            txtObservacao.Location = new Point(291, 397);
             txtObservacao.Name = "txtObservacao";
             txtObservacao.Size = new Size(254, 23);
             txtObservacao.TabIndex = 66;
+            // 
+            // txtID
+            // 
+            txtID.Location = new Point(13, 86);
+            txtID.Name = "txtID";
+            txtID.Size = new Size(254, 23);
+            txtID.TabIndex = 69;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Comic Sans MS", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.Location = new Point(12, 52);
+            label7.Name = "label7";
+            label7.Size = new Size(70, 19);
+            label7.TabIndex = 68;
+            label7.Text = "ID animal";
             // 
             // Consulta_Adicionar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 501);
+            Controls.Add(txtID);
+            Controls.Add(label7);
             Controls.Add(txtPesos);
             Controls.Add(txtObservacao);
             Controls.Add(txtPrecricao);
@@ -323,5 +340,7 @@
         private Label label5;
         private TextBox txtPesos;
         private TextBox txtObservacao;
+        private TextBox txtID;
+        private Label label7;
     }
 }

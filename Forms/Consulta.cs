@@ -7,19 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using trabalhogrupo.Construtor;
+using trabalhogrupo.SQL;
 
 namespace trabalhogrupo.Forms
 {
     public partial class Consulta : Form
     {
+        DataTable dt = new DataTable();
+        c_consulta c = new c_consulta();
+        sql_consulta sql = new sql_consulta();
+
         public Consulta()
         {
             InitializeComponent();
+            PreencherDataGrid();
+            dgvAnimais.ReadOnly = true;
+        }
+
+        public void PreencherDataGrid()
+        {
+            dt = sql_consulta.GetConsulta();
+            dgvAnimais.DataSource = dt;
         }
 
         private void btAdicionar_Click(object sender, EventArgs e)
         {
-            Animal_Adicionar k = new Animal_Adicionar();
+            Consulta_Adicionar k = new Consulta_Adicionar();
             k.Show();
             this.Hide();
         }
@@ -87,7 +101,16 @@ namespace trabalhogrupo.Forms
         private void btConfirmar_Click(object sender, EventArgs e)
         {
             //Remover o ID da BD
-
+            try
+            {
+                int id_consulta = Convert.ToInt32(txtID.Text);
+                sql.DelConsulta(id_consulta);
+                PreencherDataGrid();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             //Txt ficar limpo
             txtID.Clear();
         }
@@ -141,9 +164,9 @@ namespace trabalhogrupo.Forms
             btConfirmarAtualizar.Visible = false;
             btVoltarRemover.Visible = false;
 
-            //Ir para a pagina atualizar
-            Consulta_Atualizar k = new Consulta_Atualizar();
-            k.Show();
+            int valorID = int.Parse(txtID.Text);
+            Consulta_Atualizar atualizar = new Consulta_Atualizar(valorID);
+            atualizar.Show();
             this.Hide();
         }
     }

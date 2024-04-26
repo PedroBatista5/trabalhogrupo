@@ -37,6 +37,7 @@ namespace trabalhogrupo.Forms
             txtRaca.Text = animal.raça;
             cbSexo.Text = animal.sexo;
             txtPeso.Text = animal.peso.ToString();
+            
         }
 
         private void btConfirmar_Click(object sender, EventArgs e)
