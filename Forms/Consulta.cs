@@ -142,7 +142,7 @@ namespace trabalhogrupo.Forms
             btVoltarRemover.Visible = false;
 
             //Ir para a pagina atualizar
-            Animal_Atualizar k = new Animal_Atualizar();
+            Consulta_Atualizar k = new Consulta_Atualizar();
             k.Show();
             this.Hide();
         }

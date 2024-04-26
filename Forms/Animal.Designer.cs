@@ -181,6 +181,7 @@
             lblInformacao.Text = "Remover Animal";
             lblInformacao.TextAlign = ContentAlignment.MiddleCenter;
             lblInformacao.Visible = false;
+            lblInformacao.Click += lblInformacao_Click;
             // 
             // Animal
             // 
@@ -202,6 +203,7 @@
             Name = "Animal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Animal";
+            Load += Animal_Load;
             ((System.ComponentModel.ISupportInitialize)dgvAnimais).EndInit();
             ResumeLayout(false);
             PerformLayout();

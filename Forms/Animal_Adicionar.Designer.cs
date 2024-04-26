@@ -54,7 +54,7 @@
             // btVoltar
             // 
             btVoltar.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btVoltar.Location = new Point(656, 298);
+            btVoltar.Location = new Point(656, 230);
             btVoltar.Name = "btVoltar";
             btVoltar.Size = new Size(118, 65);
             btVoltar.TabIndex = 11;
@@ -64,14 +64,10 @@
             // 
             // btAlterar
             // 
-            btAlterar.Font = new Font("Comic Sans MS", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btAlterar.Location = new Point(656, 215);
+            btAlterar.Location = new Point(0, 0);
             btAlterar.Name = "btAlterar";
-            btAlterar.Size = new Size(118, 65);
-            btAlterar.TabIndex = 10;
-            btAlterar.Text = "Alterar Registo";
-            btAlterar.UseVisualStyleBackColor = true;
-            btAlterar.Click += btAlterar_Click;
+            btAlterar.Size = new Size(75, 23);
+            btAlterar.TabIndex = 35;
             // 
             // btAdicionar
             // 
@@ -233,7 +229,7 @@
             // cbSexo
             // 
             cbSexo.FormattingEnabled = true;
-            cbSexo.Items.AddRange(new object[] { "Macho", "Fêmia" });
+            cbSexo.Items.AddRange(new object[] { "Macho", "Fêmea" });
             cbSexo.Location = new Point(294, 264);
             cbSexo.Name = "cbSexo";
             cbSexo.Size = new Size(251, 23);
@@ -276,6 +272,7 @@
             Name = "Animal_Adicionar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Animal_Adicionar";
+            Load += Animal_Adicionar_Load;
             ResumeLayout(false);
             PerformLayout();
         }

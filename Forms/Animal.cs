@@ -8,14 +8,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using trabalhogrupo.Construtor;
+using trabalhogrupo.SQL;
+
 
 namespace trabalhogrupo.Forms
 {
     public partial class Animal : Form
     {
+        DataTable dt = new DataTable();
+        c_animal c = new c_animal();
+        sql_animal sql = new sql_animal();
+
+
         public Animal()
         {
             InitializeComponent();
+            PreencherDataGrid();
+            dgvAnimais.ReadOnly = true;
+        }
+
+        private void PreencherDataGrid()
+        {
+            dt = sql_animal.GetAnimal();
+            dgvAnimais.DataSource = dt;
         }
 
         private void btAdicionar_Click(object sender, EventArgs e)
@@ -54,6 +70,8 @@ namespace trabalhogrupo.Forms
 
         private void btAlterar_Click(object sender, EventArgs e)
         {
+
+
             //Esconder os botões anteriores
             btAdicionar.Enabled = false;
             btRemover.Enabled = false;
@@ -76,6 +94,7 @@ namespace trabalhogrupo.Forms
             txtID.Visible = true;
             btConfirmarAtualizar.Visible = true;
             btVoltarRemover.Visible = true;
+
         }
 
         private void btVoltar_Click(object sender, EventArgs e)
@@ -88,6 +107,16 @@ namespace trabalhogrupo.Forms
         private void btConfirmar_Click(object sender, EventArgs e)
         {
             //Remover o ID da BD
+            try
+            {
+                int id_animal = Convert.ToInt32(txtID.Text);
+                sql.DelAnimal(id_animal);
+                PreencherDataGrid();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             //Txt ficar limpo
             txtID.Clear();
@@ -95,6 +124,8 @@ namespace trabalhogrupo.Forms
 
         private void btVoltarRemover_Click(object sender, EventArgs e)
         {
+
+
             //Mostrar bt do menu
             btAdicionar.Enabled = true;
             btRemover.Enabled = true;
@@ -120,6 +151,8 @@ namespace trabalhogrupo.Forms
 
         private void btConfirmarAtualizar_Click(object sender, EventArgs e)
         {
+
+
             //Mostrar bt do menu
             btAdicionar.Enabled = true;
             btRemover.Enabled = true;
@@ -142,10 +175,21 @@ namespace trabalhogrupo.Forms
             btConfirmarAtualizar.Visible = false;
             btVoltarRemover.Visible = false;
 
-            //Ir para a pagina atualizar
-            Animal_Atualizar k = new Animal_Atualizar();
-            k.Show();
+
+            int valorID = int.Parse(txtID.Text);
+            Animal_Atualizar atualizar = new Animal_Atualizar(valorID);
+            atualizar.Show();
             this.Hide();
+        }
+
+        private void Animal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblInformacao_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

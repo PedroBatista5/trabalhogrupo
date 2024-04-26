@@ -276,6 +276,7 @@
             Name = "Animal_Atualizar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Animal_Atualizar";
+            Load += Animal_Atualizar_Load;
             ResumeLayout(false);
             PerformLayout();
         }
